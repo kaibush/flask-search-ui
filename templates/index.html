@@ -1,0 +1,11 @@
+<div class="page-header" style="padding-top:60px;">
+    <div id="navbar" class="navbar-collapse collapse">
+        <form class="navbar-form" method="get" action="/search_creater">
+<!--            {{form.csrf_token}}-->
+            {{form.query(placeholder='创建者',class_='form-control')}}
+            {{form.submit(class_='btn btn-success')}}
+        </form>
+    </div>
+    {% block body%}
+    {% endblock %}
+</div>
